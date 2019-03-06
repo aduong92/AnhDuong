@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+
+body {
+    margin: 0;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+  }
+  @media screen and (max-width: 600px){
+    .text-anim {
+        color: black;
+        font-size: 40px;
+        text-align: left;
+        font-family: 'Oswald', sans-serif;
+      }
+      .text-anim.animate span {
+        font-size: 40px;
+        text-align: left;
+        opacity: 1;
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+      }
+        
+    }
+
+    @media screen and (max-width: 360px){
+        .text-anim {
+            color: black;
+            font-size: 30px;
+            text-align: left;
+            font-family: 'Oswald', sans-serif;
+          }
+          .text-anim.animate span {
+            font-size: 30px;
+            text-align: left;
+            opacity: 1;
+            -webkit-filter: blur(0px);
+            -moz-filter: blur(0px);
+            -ms-filter: blur(0px);
+            filter: blur(0px);
+          }
+            
+        }
+  
+    .text-anim {
+        margin-top: 5%;
+        margin-bottom: 0;
+        padding: 0;
+        color: black;
+        font-size: 80px;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+      }
+      
+      /* ==========================================================================
+           Main Animation	 ========================================================================== */
+      .text-anim span {
+        opacity: 0;
+        transition: all, 550ms;
+        -webkit-filter: blur(25px);
+        -moz-filter: blur(25px);
+        -ms-filter: blur(25px);
+        filter: blur(25px);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+    
+      .text-anim span:nth-child(10) {
+        transition-delay: 350ms;
+      }
+      .text-anim span:nth-child(9) {
+        transition-delay: 315ms;
+      }
+      .text-anim span:nth-child(8) {
+        transition-delay: 280ms;
+      }
+      .text-anim span:nth-child(7) {
+        transition-delay: 245ms;
+      }
+      .text-anim span:nth-child(6) {
+        transition-delay: 210ms;
+      }
+      .text-anim span:nth-child(5) {
+        transition-delay: 175ms;
+      }
+      .text-anim span:nth-child(4) {
+          color:white;
+        transition-delay: 140ms;
+      }
+      .text-anim span:nth-child(3) {
+        transition-delay: 105ms;
+      }
+      .text-anim span:nth-child(2) {
+        transition-delay: 70ms;
+      }
+      .text-anim span:nth-child(1) {
+        transition-delay: 35ms;
+      }
+      
+      .text-anim.animate span {
+        opacity: 1;
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+      }
+      
+
+  #myTopnav {
+    overflow: hidden;
+    list-style: none;
+    text-decoration: none;
+    display: table;
+    width: 95%;
+  }
+  
+  #myTopnav li {
+    display: inline-block;    
+    list-style: none;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  #myTopnav li a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+  }
+  
+  #myTopnav a:hover {
+    color: teal;
+  }
+  
+  
+  #myTopnav a.icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #myTopnav {
+        display: table;
+        width: auto;
+    }
+    #myTopnav li a {display: none}
+    #myTopnav.responsive li {
+        display: table;
+        padding: 0;
+      }
+    #myTopnav a.icon{
+      display: block;
+      margin-bottom: 1px;
+        }
+  }
+  @media screen and (max-width: 600px) {
+  #myTopnav.responsive li {
+    display: table;
+    padding: 0;
+  }
+  #myTopnav.responsive li a{
+    display: table;
+    padding: 0;
+  }
+       #myTopnav.responsive a.icon{
+        display: block;
+        margin-bottom: 1px;
+  }
+}
+
+  
+  
+  .fixed {
+    position:fixed;
+    top:0;
+}

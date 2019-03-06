@@ -6,43 +6,7 @@ body {
     font-family: 'Shadows Into Light', cursive;
     text-align: center;
   }
-  @media screen and (max-width: 600px){
-    .text-anim {
-        color: black;
-        font-size: 40px;
-        text-align: left;
-        font-family: 'Oswald', sans-serif;
-      }
-      .text-anim.animate span {
-        font-size: 40px;
-        text-align: left;
-        opacity: 1;
-        -webkit-filter: blur(0px);
-        -moz-filter: blur(0px);
-        -ms-filter: blur(0px);
-        filter: blur(0px);
-      }
-        
-    }
-
-    @media screen and (max-width: 360px){
-        .text-anim {
-            color: black;
-            font-size: 30px;
-            text-align: left;
-            font-family: 'Oswald', sans-serif;
-          }
-          .text-anim.animate span {
-            font-size: 30px;
-            text-align: left;
-            opacity: 1;
-            -webkit-filter: blur(0px);
-            -moz-filter: blur(0px);
-            -ms-filter: blur(0px);
-            filter: blur(0px);
-          }
-            
-        }
+ 
   
     .text-anim {
         margin-top: 5%;
@@ -69,6 +33,7 @@ body {
     
       .text-anim span:nth-child(10) {
         transition-delay: 350ms;
+        color: teal;
       }
       .text-anim span:nth-child(9) {
         transition-delay: 315ms;
@@ -119,16 +84,15 @@ body {
   #myTopnav li {
     display: inline-block;    
     list-style: none;
-    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 30px;
   }
 
   #myTopnav li a {
     text-decoration: none;
-    color: black;
+    color: darkgrey;
+    font-size: 35px;
     display: inline-block;
   }
   
@@ -145,32 +109,74 @@ body {
     #myTopnav {
         display: table;
         width: auto;
+        padding:0;
+        left: 10%;
+        position: absolute;
     }
-    #myTopnav li a {display: none}
-    #myTopnav.responsive li {
-        display: table;
-        padding: 0;
+    #myTopnav li a {
+      display: none;
+      padding: 0;
       }
     #myTopnav a.icon{
-      display: block;
+      display:inline-block; 
+      font-size: 20px;
       margin-bottom: 1px;
         }
+    .text-anim {
+          color: black;
+          font-size: 40px;
+          font-family: 'Oswald', sans-serif;
+      }
+    .text-anim.animate span {
+          font-size: 40px;
+          opacity: 1;
+          -webkit-filter: blur(0px);
+          -moz-filter: blur(0px);
+          -ms-filter: blur(0px);
+          filter: blur(0px);
+      }
   }
   @media screen and (max-width: 600px) {
+  #myTopnav.responsive {
+      display: table;
+      position: absolute;
+      width: auto;
+      left: 10%;
+      padding:0;
+  }
   #myTopnav.responsive li {
-    display: table;
-    padding: 0;
+    display: inline-block;   
+    padding: 10px 10px;
   }
   #myTopnav.responsive li a{
-    display: table;
+    display: inline-block; 
+    font-size: 20px;
     padding: 0;
   }
-       #myTopnav.responsive a.icon{
-        display: block;
-        margin-bottom: 1px;
+  #myTopnav.responsive a.icon{
+  display: inline-block; 
+  margin-bottom: 1px;
+  font-size: 20px;
   }
 }
 
+
+@media screen and (max-width: 360px){
+  .text-anim {
+      color: black;
+      font-size: 30px;
+      font-family: 'Oswald', sans-serif;
+    }
+    .text-anim.animate span {
+      font-size: 30px;
+      opacity: 1;
+      -webkit-filter: blur(0px);
+      -moz-filter: blur(0px);
+      -ms-filter: blur(0px);
+      filter: blur(0px);
+    }
+      
+  }
   
   
   .fixed {

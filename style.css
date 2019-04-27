@@ -18,8 +18,6 @@ body {
         font-family: 'Oswald', sans-serif;
       }
       
-      /* ==========================================================================
-           Main Animation	 ========================================================================== */
       .text-anim span {
         opacity: 0;
         transition: all, 550ms;
@@ -110,6 +108,110 @@ body {
     display: none;
   }
   
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    width: 50px;
+    border-radius: 50%;
+  
+    animation: fadein 3s;
+      -moz-animation: fadein 3s; /* Firefox */
+      -webkit-animation: fadein 3s; /* Safari and Chrome */
+      -o-animation: fadein 3s; /* Opera */
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  .github {
+    background: #000;
+    color: white;
+  }
+  
+  .email {
+    background: #55ACEE;
+    color: white;
+  }
+  .linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  @-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
+  @-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  @-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
+  @keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
+
+  .fixed {
+    position:fixed;
+    top:0;
+}
+@media screen and (max-width: 770px) {
+  .icon-bar {
+    position: fixed;
+    top: 30%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    width: 50px;
+    border-radius: 50%;
+  
+    animation: fadein 3s;
+      -moz-animation: fadein 3s; /* Firefox */
+      -webkit-animation: fadein 3s; /* Safari and Chrome */
+      -o-animation: fadein 3s; /* Opera */
+  }
+
+}
   @media screen and (max-width: 700px) {
     #myTopnav {
         display: table;
@@ -212,7 +314,7 @@ body {
 }
 
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 325px){
   .text-anim {
       color: black;
       font-size: 30px;
@@ -252,80 +354,3 @@ body {
   }
   
   
-  .fixed {
-    position:fixed;
-    top:0;
-}
-.icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 10px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 20px;
-  width: 50px;
-  border-radius: 50%;
-
-  animation: fadein 3s;
-    -moz-animation: fadein 3s; /* Firefox */
-    -webkit-animation: fadein 3s; /* Safari and Chrome */
-    -o-animation: fadein 3s; /* Opera */
-}
-
-.icon-bar a:hover {
-  background-color: #000;
-}
-.github {
-  background: #000;
-  color: white;
-}
-
-.email {
-  background: #55ACEE;
-  color: white;
-}
-.linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-@-webkit-keyframes fadein { /* Safari and Chrome */
-  from {
-      opacity:0;
-  }
-  to {
-      opacity:1;
-  }
-}
-@-o-keyframes fadein { /* Opera */
-  from {
-      opacity:0;
-  }
-  to {
-      opacity: 1;
-  }
-}
-@-moz-keyframes fadein { /* Firefox */
-  from {
-      opacity:0;
-  }
-  to {
-      opacity:1;
-  }
-}
-@keyframes fadein {
-  from {
-      opacity:0;
-  }
-  to {
-      opacity:1;
-  }
-}

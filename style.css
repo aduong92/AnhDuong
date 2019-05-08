@@ -34,7 +34,7 @@ body {
     
       .text-anim span:nth-child(10) {
         transition-delay: 350ms;
-        color: teal;
+        color: #2B3D84;
       }
       .text-anim span:nth-child(9) {
         transition-delay: 315ms;
@@ -103,7 +103,7 @@ body {
   }
   
   #myTopnav a:hover {
-    color: teal;
+    color: #2B3D84;
   }
   
   
@@ -364,12 +364,12 @@ body {
     font-size: 40px;
   }
   .abheader{
-    color:teal;
+    color:#2B3D84;
     font-size: 45px;
     font-family: 'Montserrat';
   }
 .techheader{
-  color:teal;
+  color:#2B3D84;
   font-size: 45px;
   font-family: 'Montserrat';
 }
